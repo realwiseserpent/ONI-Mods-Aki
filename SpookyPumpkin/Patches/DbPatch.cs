@@ -36,10 +36,10 @@ namespace SpookyPumpkinSO.Patches
 
 			private static void AddFoodRecipes()
 			{
-				RecipeBuilder.Create(CookingStationConfig.ID, STRINGS.ITEMS.FOOD.SP_PUMPKINPIE.DESC, TUNING.FOOD.RECIPES.STANDARD_COOK_TIME)
+				RecipeBuilder.Create(GourmetCookingStationConfig.ID, STRINGS.ITEMS.FOOD.SP_PUMPKINPIE.DESC, TUNING.FOOD.RECIPES.STANDARD_COOK_TIME)
 					.NameDisplay(ComplexRecipe.RecipeNameDisplay.Result)
 					.Input(ColdWheatConfig.SEED_ID, 3f)
-					.Input(RawEggConfig.ID, 0.3f)
+					.Input(RawEggConfig.ID, 1f)
 					.Input(PumpkinConfig.ID, 2f)
 					.Output(PumpkinPieConfig.ID, 1f)
 					.Build();
