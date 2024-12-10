@@ -23,7 +23,7 @@ namespace SpookyPumpkinSO.Content.GhostPip
 		public HashSet<Tag> possibleTreats;
 		private bool queueReroll = false;
 
-		public override void OnPrefabInit()
+		protected override void OnPrefabInit()
 		{
 			base.OnPrefabInit();
 			GetPossiblePipTreats();
@@ -49,7 +49,7 @@ namespace SpookyPumpkinSO.Content.GhostPip
 				RollNewTreat();
 		}
 
-		public override void OnSpawn()
+        protected override void OnSpawn()
 		{
 			base.OnSpawn();
 

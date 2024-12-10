@@ -23,7 +23,7 @@ namespace SpookyPumpkinSO.Content.GhostPip
 
 		public override bool IsValidForTarget(GameObject target) => target.TryGetComponent(out SeedTrader _);
 
-		public override void OnPrefabInit()
+        protected override void OnPrefabInit()
 		{
 			base.OnPrefabInit();
 			titleKey = "STRINGS.UI.UISIDESCREENS.GHOSTSIDESCREEN.TITLE";
@@ -53,7 +53,7 @@ namespace SpookyPumpkinSO.Content.GhostPip
 			seedLabel = selectedItemPanel.transform.Find("SeedPanel/Label").GetComponent<LocText>();
 		}
 
-		public override void OnSpawn()
+        protected override void OnSpawn()
 		{
 			base.OnSpawn();
 			Initialize();

@@ -30,7 +30,7 @@
 		<FUtility>true</FUtility>
 		<IsPacked>true</IsPacked>
 		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-		<UsePublicised>true</UsePublicised>
+		<UsePublicised>false</UsePublicised>
 		 <DefineConstants></DefineConstants>
 		<!--DEBUG_DURATIONS WIP_EVENTS -->
 	</PropertyGroup>

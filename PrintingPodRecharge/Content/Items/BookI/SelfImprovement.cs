@@ -23,7 +23,7 @@ namespace PrintingPodRecharge.Content.Items.BookI
             canBePublic = false;
         }
 
-        public virtual void OnUse(Worker worker)
+        public virtual void OnUse(WorkerBase worker)
         {
 
         }

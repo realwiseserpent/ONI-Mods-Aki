@@ -19,7 +19,7 @@ namespace SpookyPumpkinSO.Content.GhostPip
 		private bool dim = false;
 		private bool shooClicked = false;
 
-		public override void OnSpawn()
+        protected override void OnSpawn()
 		{
 			base.OnSpawn();
 
@@ -136,7 +136,7 @@ namespace SpookyPumpkinSO.Content.GhostPip
 			}
 		}
 
-		public override void OnCleanUp()
+        protected override void OnCleanUp()
 		{
 			StopAllCoroutines();
 

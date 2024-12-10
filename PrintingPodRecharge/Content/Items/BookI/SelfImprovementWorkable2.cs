@@ -59,26 +59,26 @@ namespace PrintingPodRecharge.Content.Items.BookI
             }
         }
 
-        protected override void OnCompleteWork(Worker worker)
+        protected override void OnCompleteWork(WorkerBase worker)
         {
             book.OnUse(worker);
             Util.KDestroyGameObject(gameObject);
         }
 
-        protected override void OnStopWork(Worker worker)
+        protected override void OnStopWork(WorkerBase worker)
         {
             ToggleBook(worker, true);
             workTimeRemaining = GetWorkTime();
             base.OnStopWork(worker);
         }
 
-        protected override void OnStartWork(Worker worker)
+        protected override void OnStartWork(WorkerBase worker)
         {
             base.OnStartWork(worker);
             ToggleBook(worker, false);
         }
 
-        private void ToggleBook(Worker worker, bool visible)
+        private void ToggleBook(WorkerBase worker, bool visible)
         {
             var book = worker.GetComponent<Storage>().FindFirst(gameObject.PrefabID());
 

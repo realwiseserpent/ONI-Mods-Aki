@@ -24,7 +24,7 @@ namespace Twitchery.Content.Scripts
 
 		public bool IsWereVole => isWereVole;
 
-		public override void OnSpawn()
+        protected override void OnSpawn()
 		{
 			base.OnSpawn();
 
@@ -131,7 +131,7 @@ namespace Twitchery.Content.Scripts
 			Game.Instance.SpawnFX(SpawnFXHashes.BuildingFreeze, transform.position, 0);
 			Util.KDestroyGameObject(this);
 		}
-		public override void OnCleanUp()
+        protected override void OnCleanUp()
 		{
 			base.OnCleanUp();
 			Mod.doubledDupe.Remove(identity);

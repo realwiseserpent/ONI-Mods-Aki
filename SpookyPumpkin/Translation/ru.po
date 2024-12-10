@@ -1,0 +1,441 @@
+msgid ""
+msgstr ""
+"Application: Oxygen Not Included"
+"Generated with FUtility"
+"POT Version: 2.0"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.BUILDINGS.PREFABS.LUXURYBED.FACADES.SPOOKYPUMPKING_LUXURYBED_PUMPKIN.DESC"
+msgid "This magical pumpkin will carry any Duplicant to phantasmagorical dreams."
+msgstr "Эта волшебная тыква унесет любого дубликанта в фантасмагорические сны."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.BUILDINGS.PREFABS.LUXURYBED.FACADES.SPOOKYPUMPKING_LUXURYBED_PUMPKIN.NAME"
+msgid "<link=\"LUXURYBED\">Pumpkin Pit Bed</link>"
+msgstr "<link=\"LUXURYBED\">Кровать-тыква</link>"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.BUILDINGS.PREFABS.SP_FRIENDLYPUMPKIN.DESC"
+msgid "A friendly lamp that does not spook duplicants."
+msgstr "Дружелюбная лампа, которая не пугает дубликатов."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.BUILDINGS.PREFABS.SP_FRIENDLYPUMPKIN.EFFECT"
+msgid "Provides Light and Decor."
+msgstr "Обеспечивает свет и декор."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.BUILDINGS.PREFABS.SP_FRIENDLYPUMPKIN.NAME"
+msgid "<link=\"SPFRIENDLYPUMPKIN\">Friendly Pumpkin Lantern</link>"
+msgstr "<link=\"SPFRIENDLYPUMPKIN\">Дружелюбный фонарь из тыквы</link>"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.BUILDINGS.PREFABS.SP_FRIENDLYPUMPKIN.VARIANTS.FRIENDLYPUMPKINFACE_0"
+msgid "((^ω^))"
+msgstr "((^ω^))"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.BUILDINGS.PREFABS.SP_FRIENDLYPUMPKIN.VARIANTS.FRIENDLYPUMPKINFACE_1"
+msgid "((°▽°))"
+msgstr "((°▽°))"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.BUILDINGS.PREFABS.SP_FRIENDLYPUMPKIN.VARIANTS.FRIENDLYPUMPKINFACE_2"
+msgid "Mean 'kin"
+msgstr "Вредный"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.BUILDINGS.PREFABS.SP_FRIENDLYPUMPKIN.VARIANTS.FRIENDLYPUMPKINFACE_3"
+msgid "Meaner 'kin"
+msgstr "Вреднючий"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.BUILDINGS.PREFABS.SP_FRIENDLYPUMPKIN.VARIANTS.FRIENDLYPUMPKINFACE_4"
+msgid "Meep O' Lantern"
+msgstr "Мип-фонарь"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.BUILDINGS.PREFABS.SP_FRIENDLYPUMPKIN.VARIANTS.FRIENDLYPUMPKINFACE_5"
+msgid "Just so happy to be here!"
+msgstr "Просто так счастлив быть здесь!"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.BUILDINGS.PREFABS.SP_FRIENDLYPUMPKIN.VARIANTS.FRIENDLYPUMPKINFACE_6"
+msgid "o0o"
+msgstr "o0o"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.BUILDINGS.PREFABS.SP_FRIENDLYPUMPKIN.VARIANTS.FRIENDLYPUMPKINFACE_7"
+msgid "((°ᗢ°))"
+msgstr "((°ᗢ°))"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.BUILDINGS.PREFABS.SP_SPOOKYPUMPKIN.DESC"
+msgid "A spooky lamp for spooky times."
+msgstr "Жуткая лампа для жутких времен."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.BUILDINGS.PREFABS.SP_SPOOKYPUMPKIN.EFFECT"
+msgid "Provides Light and Decor. Spooks duplicants that come nearby."
+msgstr "Обеспечивает свет и декор. Припугивает дубликатов, которые пробегают поблизости."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.BUILDINGS.PREFABS.SP_SPOOKYPUMPKIN.NAME"
+msgid "<link=\"SPSPOOKYPUMPKIN\">Jack O' Lantern</link>"
+msgstr "<link=\"SPSPOOKYPUMPKIN\">Джек-фонарь</link>"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.CREATURES.SPECIES.SEEDS.SP_PUMPKIN.DESC"
+msgid "The <link=\"PLANTS\">Seed</link> of a <link=\"SPPUMPKINPLANT\">Pumpkin</link> plant.\n\nIt can be planted to grow more Pumpkins, or toasted for snacks."
+msgstr "<link=\"PLANTS\">Семя</link> <link=\"SPPUMPKINPLANT\">тыквы</link>.\n\nЕго можно посадить, чтобы вырастить больше тыкв, или поджарить на закуску."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.CREATURES.SPECIES.SEEDS.SP_PUMPKIN.NAME"
+msgid "<link=\"SPPUMPKINPLANT\">Pumpkin Seed</link>"
+msgstr "<link=\"SPPUMPKINPLANT\">Семя тыквы</link>"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.CREATURES.SPECIES.SP_GHOSTPIP.DESC"
+msgid "Seems suspicious. It looks like it would love some treats.\n\n<smallcaps>The Suspicious Pip will offer to trade for Pumpkin Seeds. The required item will change daily and after each trade.</smallcaps>"
+msgstr "Весьма подозрительный пип. Похоже, ему не терпится чем нибудь угоститься.\n\n<smallcaps>Подозрительный пип предложит обмен на тыквенные семечки. Требуемый предмет будет меняться ежедневно и после каждой сделки.</smallcaps>"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.CREATURES.SPECIES.SP_GHOSTPIP.NAME"
+msgid "<link=\"SQUIRREL\">Suspicious Pip</link>"
+msgstr "<link=\"SQUIRREL\">Подозрительный пип</link>"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.CREATURES.SPECIES.SP_PUMPKIN.DECOR_NAME"
+msgid "<link=\"SPPUMPKINPLANT\">Decorative Pumpkin</link>"
+msgstr "<link=\"SPPUMPKINPLANT\">Декоративная тыква</link>"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.CREATURES.SPECIES.SP_PUMPKIN.DESC"
+msgid "Pumpkins are pretty neat. They grow enormous fruits also called <link=\"SPPUMPKIN\">Pumpkins</link>."
+msgstr "Тыквы классные. Они производят огромными плоды, которые также называются <link=\"SPPUMPKIN\">тыквами</link>."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.CREATURES.SPECIES.SP_PUMPKIN.DOMESTICATEDDESC"
+msgid "Pumpkins are pretty neat. They grow enormous fruits also called <link=\"SPPUMPKIN\">Pumpkins</link>."
+msgstr "Тыквы классные. Они производят огромными плоды, которые также называются <link=\"SPPUMPKIN\">тыквами</link>."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.CREATURES.SPECIES.SP_PUMPKIN.NAME"
+msgid "<link=\"SPPUMPKINPLANT\">Pumpkin</link>"
+msgstr "<link=\"SPPUMPKINPLANT\">Тыква</link>"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.DUPLICANTS.DISEASES.SP_SICKNESS_SUGARSICKNESS.NAME"
+msgid "<link=\"SPSICKNESSSUGARSICKNESS\">Sugar sick!</link>"
+msgstr "<link=\"SPSICKNESSSUGARSICKNESS\">Сахарная тошнота!</link>"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.DUPLICANTS.DISEASES.SP_SICKNESS_SUGARSICKNESS.SOURCE"
+msgid "Twitch chat"
+msgstr "Twitch чат"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.DUPLICANTS.MODIFIERS.AHM_HOLIDAYSPIRIT.DESCRIPTION"
+msgid "This Duplicant is excited for this time of year. (All stats up!)"
+msgstr "Этот дубликант в восторге от текущего времени года. (Все характеристики увеличены!)"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.DUPLICANTS.MODIFIERS.AHM_HOLIDAYSPIRIT.NAME"
+msgid "Holiday Spirit"
+msgstr "Дух праздника"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.DUPLICANTS.STATUSITEMS.GHASTLY.NAME"
+msgid "Ghastly"
+msgstr "Призрак"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.DUPLICANTS.STATUSITEMS.GHASTLY.TOOLTIP"
+msgid ""
+msgstr ""
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.DUPLICANTS.STATUSITEMS.HOLIDAY_SPIRIT.NAME"
+msgid "Holiday Spirit"
+msgstr "Дух праздника"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.DUPLICANTS.STATUSITEMS.HOLIDAY_SPIRIT.TOOLTIP"
+msgid "This Duplicant is excited for this time of year. (All stats up!)"
+msgstr "Этот дубликант в восторге от текущего времени года. (Все характеристики увеличены!)"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.DUPLICANTS.STATUSITEMS.SP_GHASTLYLITBONUS.NAME"
+msgid "Otherworldly Focus"
+msgstr "Потусторонний фокус"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.DUPLICANTS.STATUSITEMS.SP_GHASTLYLITBONUS.TOOLTIP"
+msgid "<b>Properties</b>\n    • <style=\"KKeyword\">Work Speed</style>: {0}\n    • <style=\"KKeyword\">Stress</style>: {1}"
+msgstr "<b>Свойства</b>\n    • <style=\"KKeyword\">Скорость работы</style>: {0}\n    • <style=\"KKeyword\">Стресс</style>: {1}"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.DUPLICANTS.STATUSITEMS.SPOOKED.NAME"
+msgid "Spooked!"
+msgstr "Испуган!"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.DUPLICANTS.STATUSITEMS.SPOOKED.TOOLTIP"
+msgid "This Duplicant saw something super scary!"
+msgstr "Этот дубликант увидел что-то очень страшное!"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.EQUIPMENT.PREFABS.SP_HALLOWEENCOSTUME.FACADES.SP_JACKSKELLINGTONCOSTUME"
+msgid "<link=\"SPHALLOWEENCOSTUME\">Skellington Costume</link>"
+msgstr "<link=\"SPHALLOWEENCOSTUME\">Костюм Скеллингтона</link>"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.EQUIPMENT.PREFABS.SP_HALLOWEENCOSTUME.FACADES.SP_SCARECROWCOSTUME"
+msgid "<link=\"SPHALLOWEENCOSTUME\">Scarecrow Costume</link>"
+msgstr "<link=\"SPHALLOWEENCOSTUME\">Костюм пугала</link>"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.EQUIPMENT.PREFABS.SP_HALLOWEENCOSTUME.FACADES.SP_VAMPIRECOSTUME"
+msgid "<link=\"SPHALLOWEENCOSTUME\">Vampire Costume</link>"
+msgstr "<link=\"SPHALLOWEENCOSTUME\">Костюм вампира</link>"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.EQUIPMENT.PREFABS.SP_HALLOWEENCOSTUME.GENERICNAME"
+msgid "<link=\"SPHALLOWEENCOSTUME\">Halloween Costume</link>"
+msgstr "<link=\"SPHALLOWEENCOSTUME\">Хэллоуинский костюм</link>"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.EQUIPMENT.PREFABS.SP_HALLOWEENCOSTUME.NAME"
+msgid "<link=\"SPHALLOWEENCOSTUME\">Halloween Costume</link>"
+msgstr "<link=\"SPHALLOWEENCOSTUME\">Хэллоуинский костюм</link>"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.ITEMS.FOOD.SP_PUMPKIN.DESC"
+msgid "Bland tasting fruit of a <link=\"SPPUMPKINPLANT\">Pumpkin</link> plant."
+msgstr "Обладающий нежным вкусом плод <link=\"SPPUMPKINPLANT\">тыквы</link>."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.ITEMS.FOOD.SP_PUMPKIN.NAME"
+msgid "<link=\"SPPUMPKIN\">Pumpkin</link>"
+msgstr "<link=\"SPPUMPKIN\">Тыква</link>"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.ITEMS.FOOD.SP_PUMPKINPIE.DEHYDRATED.DESC"
+msgid "A dehydrated <link=\"SPPUMPKINPIE\">Pumpkin Pie</link> ration. It must be rehydrated in order to be considered <link=\"FOOD\">Food</link>.\n\nDry rations have no expiry date."
+msgstr "Высушенный <link=\"SPPUMPKINPIE\">тыквенный пирог</link>. Чтобы его можно было употребить как <link=\"FOOD\">еду</link>, нужно восстановить влагу.\n\nВысушенные продукты не портятся."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.ITEMS.FOOD.SP_PUMPKINPIE.DEHYDRATED.NAME"
+msgid "Dried Pumpkin Pie"
+msgstr "Сухой тыквенный пирог"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.ITEMS.FOOD.SP_PUMPKINPIE.DESC"
+msgid "A delicious seasonal treat."
+msgstr "Вкусное сезонное лакомство."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.ITEMS.FOOD.SP_PUMPKINPIE.NAME"
+msgid "<link=\"SPPUMPKINPIE\">Pumpkin Pie</link>"
+msgstr "<link=\"SPPUMPKINPIE\">Тыквенный пирог</link>"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.ITEMS.FOOD.SP_TOASTEDPUMPKINSEED.DESC"
+msgid "Tasty snack."
+msgstr "Вкусная закуска."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.ITEMS.FOOD.SP_TOASTEDPUMPKINSEED.NAME"
+msgid "<link=\"SPTOASTEDPUMPKINSEED\">Roasted Pumpkin Seeds</link>"
+msgstr "<link=\"SPTOASTEDPUMPKINSEED\">Жареные семена тыквы</link>"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.ITEMS.SPICES.SP_PUMPKIN_SPICE.DESC"
+msgid "It's that season of the year!"
+msgstr "Щепотка жуткого времени года!"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.ITEMS.SPICES.SP_PUMPKIN_SPICE.NAME"
+msgid "<link=\"SPPUMPKINSPICE\">Pumpkin Spice</link>"
+msgstr "<link=\"SPPUMPKINSPICE\">Тыквенная приправа</link>"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.RECARVE"
+msgid "Recarve"
+msgstr "Перевырезать"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.ROTATE"
+msgid "Rotate"
+msgstr "Повернуть"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN.TWITCHEVENTS.FOODRAIN.TOAST_BODY"
+msgid "Food!"
+msgstr "Еда!"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN.TWITCHEVENTS.PIPTERGEIST.NAME"
+msgid "Piptergeists"
+msgstr "Пиптергейст"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN.TWITCHEVENTS.PIPTERGEIST.TOAST"
+msgid "Piptergeists!"
+msgstr "Пиптергейст!"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN.TWITCHEVENTS.PIPTERGEIST.TOAST_BODY"
+msgid "Ghosts Pips are rummaging the storages! How rude!"
+msgstr "Призрачные пип роются в хранилищах! Как грубо!"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN.TWITCHEVENTS.ROTFOOD.TOAST_BODY"
+msgid "Spoiled Rotten!\n\nSome of your food has rotten."
+msgstr "Гниль, тухлятина!\n\nНекоторые продукты испортились."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN.TWITCHEVENTS.SUGARSICKNESS.TOAST_BODY"
+msgid "Oh no! Everyone ate too much candy, and got an upset stomach."
+msgstr "О, нет! Все съели слишком много конфет, и у них началось расстройство желудка."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN.TWITCHEVENTS.TRICKORTREAT.NAME"
+msgid "Trick Or Treat!"
+msgstr "Сладость или гадость!"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN.TWITCHEVENTS.TRICKORTREAT.TREAT"
+msgid "TREAT!"
+msgstr "СЛАДОСТЬ!"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN.TWITCHEVENTS.TRICKORTREAT.TRICK"
+msgid "TRICK!"
+msgstr "ГАДОСТЬ!"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN.TWITCHEVENTS.TRIPLEBOX.TOAST_BODY"
+msgid "Surprise Boxes X3!"
+msgstr "Коробки с сюрпризами X3!"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN_MODSETTINGS.GHASTLY_BONUS.TITLE"
+msgid "Ghastly efficiency bonus (%)"
+msgstr "Призрачный бонус эффективности (%)"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN_MODSETTINGS.GHASTLY_BONUS.TOOLTIP"
+msgid "Work speed bonus while in ghastly form."
+msgstr "Бонус к скорости работы в призрачной форме."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN_MODSETTINGS.GHASTLY_LOOKS.TITLE"
+msgid "Ghastly look"
+msgstr "Призрачный вид"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN_MODSETTINGS.GHASTLY_LOOKS.TOOLTIP"
+msgid "Should ghastly dupes look ghastly."
+msgstr "Должны ли дубликанты выглядеть как призраки?"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN_MODSETTINGS.GHASTLY_STRESS_BONUS.TITLE"
+msgid "Ghastly stress relief (%)"
+msgstr "Призрачный бонус к уменьшению стресса (%)"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN_MODSETTINGS.GHASTLY_STRESS_BONUS.TOOLTIP"
+msgid "Stress reduction bonus while in ghastly form"
+msgstr "Бонус к уменьшению стресса в призрачной форме"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN_MODSETTINGS.GHOSTPIP_LIGHT.TITLE"
+msgid "Suspicious Pip emits Light"
+msgstr "Подозрительный пип излучает свет"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN_MODSETTINGS.GHOSTPIP_LIGHT.TOOLTIP"
+msgid "If true, the Suspicious Pip will emit some light."
+msgstr "Если выбрано, подозрительный пип будет излучать свет."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN_MODSETTINGS.ROT.TITLE"
+msgid "Use rot for fertilizer"
+msgstr "Использовать гниль в качестве удобрения"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.SPOOKYPUMPKIN_MODSETTINGS.ROT.TOOLTIP"
+msgid "If true, pumpkin plants will use Rot along Dirt for fertilization."
+msgstr "Если выбрано, тыквы будут использовать гниль вместе с грязью в качестве удобрения."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.UISIDESCREENS.FRIENDLYPUMPKIN_SIDE_SCREEN.TITLE"
+msgid "Friendly Lantern Face"
+msgstr "Дружелюбное лицо-фонарь"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.UISIDESCREENS.GHOSTPIP_SPAWNER.TEXT_ACTIVE"
+msgid "Answer mysterious call"
+msgstr "Ответить за мистический звонок"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.UISIDESCREENS.GHOSTPIP_SPAWNER.TEXT_INACTIVE"
+msgid "Pip called"
+msgstr "Пип призван"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.UISIDESCREENS.GHOSTPIP_SPAWNER.TOOLTIP"
+msgid "Spooky squeaks are whispered through the receiver... "
+msgstr "В трубке раздаются жуткие писки..."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.UISIDESCREENS.GHOSTPIP_SPAWNER.TOOLTIP_INACTIVE"
+msgid "Pip spawned."
+msgstr "Пип появился."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.UISIDESCREENS.GHOSTSIDESCREEN.CANCELBUTTON"
+msgid "Cancel"
+msgstr "Отмена"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.UISIDESCREENS.GHOSTSIDESCREEN.CONFIRM"
+msgid "Are you sure?"
+msgstr "Вы уверены?"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.UISIDESCREENS.GHOSTSIDESCREEN.LABEL"
+msgid "Wants one {Item}"
+msgstr "Хочет одну порцию {Item}"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.UISIDESCREENS.GHOSTSIDESCREEN.LABEL2"
+msgid "Delivering {Item}"
+msgstr "Доставка {Item}"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.UISIDESCREENS.GHOSTSIDESCREEN.MESSAGE"
+msgid "This suspicious pip looks like it wants some treats."
+msgstr "Этот подозрительный пип выглядит так, словно хочет угощения."
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.UISIDESCREENS.GHOSTSIDESCREEN.SEND_AWAY"
+msgid "Send {Name} away forever"
+msgstr "Прогнать {Name} навсегда"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.UISIDESCREENS.GHOSTSIDESCREEN.SHOO"
+msgid "Shoo Away"
+msgstr "Прогнать"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.UISIDESCREENS.GHOSTSIDESCREEN.TITLE"
+msgid "Suspicious Pip"
+msgstr "Подозрительный пип"
+
+# 
+msgctxt "SpookyPumpkinSO.STRINGS.UI.UISIDESCREENS.GHOSTSIDESCREEN.TREATBUTTON"
+msgid "Deliver Treat"
+msgstr "Доставить угощение"
+

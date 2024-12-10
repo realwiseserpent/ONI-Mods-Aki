@@ -4,7 +4,7 @@ namespace SpookyPumpkinSO.Content.Cmps
 {
 	public class Piptergeist : StateMachineComponent<Piptergeist.Instance>
 	{
-		public override void OnSpawn()
+		protected override void OnSpawn()
 		{
 			base.OnSpawn();
 			smi.StartSM();

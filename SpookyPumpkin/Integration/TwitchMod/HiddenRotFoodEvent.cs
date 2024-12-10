@@ -1,4 +1,5 @@
-﻿using ONITwitchLib;
+﻿using HarmonyLib;
+using ONITwitchLib;
 using UnityEngine;
 
 namespace SpookyPumpkinSO.Integration.TwitchMod
@@ -16,7 +17,7 @@ namespace SpookyPumpkinSO.Integration.TwitchMod
 			{
 				var food = Components.Edibles.Items[i];
 
-				if (food.foodInfo.CanRot
+				if (food.FoodInfo.CanRot
 					&& !food.HasTag(GameTags.Preserved)
 					&& Random.value < CHANCE
 					&& food.TryGetComponent(out PrimaryElement primaryElement))
@@ -46,11 +47,23 @@ namespace SpookyPumpkinSO.Integration.TwitchMod
 			if (rottable == null)
 				return;
 
-			if (rottable.IsInsideState(rottable.smi.sm.Preserved))
-				return;
 
-			rottable.RotValue = 1f;
-			rottable.smi.GoTo(rottable.smi.sm.Spoiled);
+            Traverse traverse = Traverse.Create(rottable).Field("smi");
+            KAnim.PlayMode s = (KAnim.PlayMode)traverse.GetValue();
+
+            KPrefabID component = food.GetComponent<KPrefabID>();
+			if (!component.HasAnyTags(new Tag[3]
+			{
+				GameTags.Preserved,
+				GameTags.Dehydrated,
+				GameTags.Entombed
+			}))
+				return;
+                //if (rottable.IsInsideState((Rottable)rottable.sm.Preserved))
+				//return;
+
+            rottable.RotValue = 1f;
+			rottable.GoTo(food.GetComponent<Rottable>().Spoiled);
 
 			Game.Instance.SpawnFX(SpawnFXHashes.OxygenEmissionBubbles, Grid.PosToCell(rottable), 0);
 		}

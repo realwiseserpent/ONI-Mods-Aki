@@ -19,7 +19,7 @@ namespace SpookyPumpkinSO.Content.Buildings
 
 		public override bool IsValidForTarget(GameObject target) => target.GetComponent<CarvedPumpkin>() != null;
 
-		public override void OnSpawn()
+		protected override void OnSpawn()
 		{
 			base.OnSpawn();
 

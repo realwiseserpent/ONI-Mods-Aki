@@ -18,7 +18,7 @@ namespace Twitchery
 
 		public AETE_DevTool() => RequiresGameRunning = true;
 
-		public override void RenderTo(DevPanel panel)
+        protected override void RenderTo(DevPanel panel)
 		{
 			if (ImGui.Button("CLean save"))
 			{

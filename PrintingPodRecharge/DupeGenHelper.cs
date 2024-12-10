@@ -246,7 +246,7 @@ namespace PrintingPodRecharge
 
             if (goodTraits)
             {
-                stats.Traits.RemoveAll(trait => !trait.PositiveTrait && trait.Id != MinionConfig.MINION_BASE_TRAIT_ID);
+                stats.Traits.RemoveAll(trait => !trait.PositiveTrait && !trait.Id.Contains("BaseTrait"));
 
                 AddRandomTraits(stats, 4, 8, DUPLICANTSTATS.GOODTRAITS);
                 AddRandomTraits(stats, 0, 2, DUPLICANTSTATS.BADTRAITS);
@@ -255,7 +255,7 @@ namespace PrintingPodRecharge
             }
             else
             {
-                stats.Traits.RemoveAll(trait => trait.PositiveTrait && trait.Id != MinionConfig.MINION_BASE_TRAIT_ID);
+                stats.Traits.RemoveAll(trait => trait.PositiveTrait && !trait.Id.Contains("BaseTrait"));
                 AddRandomTraits(stats, 0, 2, DUPLICANTSTATS.GOODTRAITS);
                 AddRandomTraits(stats, 4, 8, DUPLICANTSTATS.BADTRAITS);
                 AddRandomTraits(stats, 1, 1, DUPLICANTSTATS.NEEDTRAITS);

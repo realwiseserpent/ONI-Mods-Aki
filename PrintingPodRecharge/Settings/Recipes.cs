@@ -1,5 +1,7 @@
 ﻿using FUtility.SaveData;
 using PrintingPodRecharge.Content.Items;
+using PrintingPodRecharge.Content.Items.BookI;
+using PrintingPodRecharge.Content.Items.Dice;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -143,7 +145,93 @@ namespace PrintingPodRecharge.Settings
 
             new FRecipe()
             {
-                Description = "PrintingPodRecharge.STRINGS.ITEMS.MEDICINAL_BIO_INK.DESC",
+                Description = "STRINGS.ITEMS.TWITCH_BIO_INK.DESC",
+                Time = 40f,
+                Inputs = new FRecipeElement[] {
+                    new FRecipeElement(BasicFabricConfig.ID, 1)
+                },
+                Outputs = new FRecipeElement[] {
+                    new FRecipeElement(BioInkConfig.TWITCH, 2)
+                }
+            },
+
+            new FRecipe()
+            {
+                Description = "STRINGS.ITEMS.CAT_DRAWING.DESC",
+                Time = 40f,
+                Inputs = new FRecipeElement[] {
+                    new FRecipeElement(BasicFabricConfig.ID, 1)
+                },
+                Outputs = new FRecipeElement[] {
+                    new FRecipeElement(CatDrawingConfig.ID, 2)
+                }
+            },
+
+            new FRecipe()
+            {
+                Description = "STRINGS.ITEMS.BOOK_OF_SELF_IMPROVEMENT.DESC",
+                Time = 40f,
+                Inputs = new FRecipeElement[] {
+                    new FRecipeElement(BasicFabricConfig.ID, 1)
+                },
+                Outputs = new FRecipeElement[] {
+                    new FRecipeElement(SelfImprovablesConfig.BOOK_VOL1, 2)
+                }
+            },
+
+            new FRecipe()
+            {
+                Description = "STRINGS.ITEMS.BOOK_OF_SELF_IMPROVEMENT_VOL2.DESC",
+                Time = 40f,
+                Inputs = new FRecipeElement[] {
+                    new FRecipeElement(BasicFabricConfig.ID, 1)
+                },
+                Outputs = new FRecipeElement[] {
+                    new FRecipeElement(SelfImprovablesConfig.BOOK_VOL2, 2)
+                }
+            },
+
+
+
+            new FRecipe()
+            {
+                Description = "STRINGS.ITEMS.MANGA.DESC",
+                Time = 40f,
+                Inputs = new FRecipeElement[] {
+                    new FRecipeElement(BasicFabricConfig.ID, 1)
+                },
+                Outputs = new FRecipeElement[] {
+                    new FRecipeElement(SelfImprovablesConfig.MANGA, 2)
+                }
+            },
+
+            new FRecipe()
+            {
+                Description = "STRINGS.ITEMS.D8.DESC",
+                Time = 40f,
+                Inputs = new FRecipeElement[] {
+                    new FRecipeElement(BasicFabricConfig.ID, 1)
+                },
+                Outputs = new FRecipeElement[] {
+                    new FRecipeElement(SelfImprovablesConfig.D8, 2)
+                }
+            },
+
+            new FRecipe()
+            {
+                Description = "STRINGS.ITEMS.D6.DESC",
+                Time = 40f,
+                Inputs = new FRecipeElement[] {
+                    new FRecipeElement(BasicFabricConfig.ID, 1)
+                },
+                Outputs = new FRecipeElement[] {
+                    new FRecipeElement(D6Config.ID, 2)
+                }
+            },
+
+            new FRecipe()
+            {
+                Description = "STRINGS.ITEMS.MEDICINAL_BIO_INK.DESC",
                 Time = 40f,
                 Inputs = new FRecipeElement[] {
                     new FRecipeElement(BioInkConfig.DEFAULT, 2),

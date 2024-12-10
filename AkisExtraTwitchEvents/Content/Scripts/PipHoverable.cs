@@ -17,7 +17,7 @@ namespace Twitchery.Content.Scripts
         private KAnim.Build.Symbol normalMouth;
         private KAnim.Build.Symbol happyMouth;
 
-        public override void OnSpawn()
+        protected override void OnSpawn()
         {
             base.OnSpawn();
             symbolOverrideController = pipKbac.GetComponent<SymbolOverrideController>();

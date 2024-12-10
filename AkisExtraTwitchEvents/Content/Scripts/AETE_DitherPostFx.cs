@@ -74,7 +74,7 @@ namespace Twitchery.Content.Scripts
             yield return null;
         }
 
-        public override void OnPrefabInit()
+        protected override void OnPrefabInit()
         {
             base.OnPrefabInit();
             Instance = this;
@@ -148,7 +148,7 @@ namespace Twitchery.Content.Scripts
             }
         }
 
-        public override void OnCleanUp()
+        protected override void OnCleanUp()
         {
             base.OnCleanUp();
             Instance = null;

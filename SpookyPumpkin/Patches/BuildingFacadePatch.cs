@@ -1,4 +1,5 @@
-﻿using FUtility;
+﻿using Database;
+using FUtility;
 using HarmonyLib;
 using SpookyPumpkinSO.Content;
 
@@ -11,26 +12,29 @@ namespace SpookyPumpkinSO.Patches
 		{
 			public static void Prefix(BuildingFacade __instance, ref object __state)
 			{
-				if (__instance.currentFacade != SPFacades.PUMPKINBED)
+				if (__instance.CurrentFacade != SPFacades.PUMPKINBED)
 					return;
 
 				if (__instance.TryGetComponent(out KBatchedAnimController kbac))
 				{
+                    Traverse traverse = Traverse.Create(kbac).Field("mode");
+                    KAnim.PlayMode s = (KAnim.PlayMode)traverse.GetValue();
+
 					__state = new AnimState()
 					{
 						anim = kbac.currentAnim,
-						mode = kbac.mode,
+						mode = s,//kbac.mode,
 						hasValue = true
 					};
 
 					Log.Debug($"saved state: {kbac.currentAnim} {HashCache.Get().Get(kbac.currentAnim)}");
-					Log.Debug(__instance.currentFacade);
+					Log.Debug(__instance.CurrentFacade);
 				}
 			}
 
 			public static void Postfix(BuildingFacade __instance, ref object __state)
 			{
-				if (__instance.currentFacade != SPFacades.PUMPKINBED)
+				if (__instance.CurrentFacade != SPFacades.PUMPKINBED)
 					return;
 
 				if (__instance.TryGetComponent(out BuildingUnderConstruction _))

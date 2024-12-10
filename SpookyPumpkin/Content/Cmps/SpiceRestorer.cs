@@ -18,13 +18,13 @@ namespace SpookyPumpkinSO.Content.Cmps
 
 		private static AccessTools.FieldRef<Edible, List<SpiceInstance>> ref_Spices;
 
-		public override void OnPrefabInit()
+		protected override void OnPrefabInit()
 		{
 			base.OnPrefabInit();
 			ref_Spices = AccessTools.FieldRefAccess<Edible, List<SpiceInstance>>("spices");
 		}
 
-		public override void OnSpawn()
+        protected override void OnSpawn()
 		{
 			base.OnSpawn();
 			Mod.spiceRestorers.Add(this);

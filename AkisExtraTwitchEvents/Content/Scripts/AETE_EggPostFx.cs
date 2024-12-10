@@ -12,7 +12,7 @@ namespace Twitchery.Content.Scripts
 		public float durationSeconds = ModTuning.EGG_DURATION;
 		public float elapsed = 0;
 
-		public override void OnPrefabInit()
+        protected override void OnPrefabInit()
 		{
 			base.OnPrefabInit();
 			Instance = this;
@@ -46,7 +46,7 @@ namespace Twitchery.Content.Scripts
 			}
 		}
 
-		public override void OnCleanUp()
+        protected override void OnCleanUp()
 		{
 			base.OnCleanUp();
 			Instance = null;

@@ -1,0 +1,536 @@
+msgid ""
+msgstr ""
+"Application: Oxygen Not Included"
+"Generated with FUtility"
+"POT Version: 2.0"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.BUILDINGS.STATUSITEMS.PPR_PRINTREADY.NAME"
+msgid "Ink ready"
+msgstr "Чернила готовы"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.BIO_INK.DESC"
+msgid "Collected unused printing material of a Printing pod. Allows immediate recharging of a Printing Pod."
+msgstr "Универсальный конструкционный полимер. \n\nПозволяет мгновенно перезарядить печатный станок."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.BIO_INK.NAME"
+msgid "<link=\"PRINTINGPODRECHARGEBIOINK\">Bio-Ink</link>"
+msgstr "<link=\"PRINTINGPODRECHARGEBIOINK\">Биочернила</link>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.BOOK_OF_SELF_IMPROVEMENT.DESC"
+msgid "A handy handbook about improving and loving one's self. \n\nRemoves the first negative trait from a duplicant assigned to read it.\n\n<b>Single Use</b>"
+msgstr "Карманное руководство по саморазвитию и любви к себе. \n\nУдаляет первую отрицательную черту у дубликанта, который его прочитает.\n\n<b>Одноразовый предмет</b>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.BOOK_OF_SELF_IMPROVEMENT.NAME"
+msgid "<link=\"PRINTINGPODRECHARGEBOOKOFSELFIMPROVEMENTVOL2\">Book of self improvement Vol I</link>"
+msgstr "<link=\"PRINTINGPODRECHARGEBOOKOFSELFIMPROVEMENTVOL2\">Книга по самосовершенствованию, Том I</link>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.BOOK_OF_SELF_IMPROVEMENT_VOL2.DESC"
+msgid "The second volume for a handbook about improving and loving one's self. \n\nImproves the lowest stat of a duplicant who reads it.\n\n<b>Single Use</b>"
+msgstr "Второй том руководства по саморазвитию и любви к себе. \n\nПовышает самую низкую характеристику дубликанта, который его прочитает.\n\n<b>Одноразовый предмет</b>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.BOOK_OF_SELF_IMPROVEMENT_VOL2.NAME"
+msgid "<link=\"PRINTINGPODRECHARGEBOOKOFSELFIMPROVEMENTVOL2\">Book of self improvement Vol II</link>"
+msgstr "<link=\"PRINTINGPODRECHARGEBOOKOFSELFIMPROVEMENTVOL2\">Книга по самосовершенствованию, Том II</link>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.CAT_DRAWING.DESC"
+msgid "A neat crayon drawing of a cat. (Can be displayed on a pedestal.)"
+msgstr "Аккуратный карандашный рисунок кошки. (Можно разместить на постаменте.)"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.CAT_DRAWING.NAME"
+msgid "<link=\"PRINTINGPODRECHARGECATDRAWING\">A drawing of a cat</link>"
+msgstr "<link=\"PRINTINGPODRECHARGECATDRAWING\">Рисунок кошки</link>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.D100.DESC"
+msgid "Rerolls the traits and skills of a duplicant.\n\n<b>Single Use</b>"
+msgstr "Изменяет черты и навыки дубликанта.\n\n<b>Одноразовый предмет</b>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.D100.NAME"
+msgid "<link=\"PRINTINGPODRECHARGED100\">D100</link>"
+msgstr "<link=\"PRINTINGPODRECHARGED100\">D100</link>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.D4.DESC"
+msgid "Rerolls all traits of a duplicant (such as Narcoleptic, Starry Eyed, Buff, etc.).\n\n<b>Single Use</b>"
+msgstr "Обновляет все черты дубликанта (например, Нарколептик, Звездоглазый, Гурман и т.д.).\n\n<b>Одноразовый предмет</b>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.D4.NAME"
+msgid "<link=\"PRINTINGPODRECHARGED4\">D4</link>"
+msgstr "<link=\"PRINTINGPODRECHARGED4\">D4</link>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.D6.DESC"
+msgid "Rerolls a printing pod offer. Consumable."
+msgstr "Обновить набор предложений печатного станка. Расходник."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.D6.NAME"
+msgid "<link=\"PRINTINGPODRECHARGED6\">D6</link>"
+msgstr "<link=\"PRINTINGPODRECHARGED6\">D6</link>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.D8.DESC"
+msgid "Rerolls all skills of a duplicant (such as digging, athletics, strength, etc.).\n\n<b>Single Use</b>"
+msgstr "Обновляет все характеристики дубликанта (например, рытье, Физическая форма, сила и т.д.).\n\n<b>Одноразовый предмет</b>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.D8.NAME"
+msgid "<link=\"PRINTINGPODRECHARGED8\">D8</link>"
+msgstr "<link=\"PRINTINGPODRECHARGED8\">D8</link>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.FOOD.PRINTINGPODRECHARGE_LEEK.DESC"
+msgid "Tasty greens."
+msgstr "Вкусная зелень."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.FOOD.PRINTINGPODRECHARGE_LEEK.NAME"
+msgid "<link=\"PRINTINGPODRECHARGELEEK\">Leek</link>"
+msgstr "<link=\"PRINTINGPODRECHARGELEEK\">Лук-порей</link>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.FOOD_BIO_INK.DESC"
+msgid "Collected unused printing material of a Printing pod. Makes new printables only edible items."
+msgstr "Универсальный конструкционный полимер. \n\nПозволяет мгновенно перезарядить печатный станок. \nПредложенные схемы будут содержать готовые блюда и ингредиенты для готовки."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.FOOD_BIO_INK.NAME"
+msgid "<link=\"PRINTINGPODRECHARGEFOODBIOINK\">Nutritious Bio-Ink</link>"
+msgstr "<link=\"PRINTINGPODRECHARGEFOODBIOINK\">Пищевые биочернила</link>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.GERMINATED_BIO_INK.DESC"
+msgid "Collected unused printing material of a Printing pod. Allows immediate recharging of a Printing Pod, and causes the new selection to only include eggs and baby creatures."
+msgstr "Универсальный конструкционный полимер. \n\nПозволяет мгновенно перезарядить печатный станок. \nПредложенные схемы будут содержать яйца и детенышей различных существ."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.GERMINATED_BIO_INK.NAME"
+msgid "<link=\"PRINTINGPODRECHARGEGERMINATEDBIOINK\">Eggy Bio-Ink</link>"
+msgstr "<link=\"PRINTINGPODRECHARGEGERMINATEDBIOINK\">Яичные биочернила</link>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.MANGA.DESC"
+msgid "A Duplicant can read this.\n\n<b>Single Use</b>"
+msgstr "Дупликант может прочитать это.\n\n<b>Одноразовый предмет</b>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.MANGA.NAME"
+msgid "<link=\"PRINTINGPODRECHARGEMANGA\">Manga</link>"
+msgstr "<link=\"PRINTINGPODRECHARGEMANGA\">Манга</link>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.MEDICINAL_BIO_INK.DESC"
+msgid "Collected unused printing material of a Printing pod. Makes new printables contain cures and medicines."
+msgstr "Универсальный конструкционный полимер. \n\nПозволяет мгновенно перезарядить печатный станок. \nПредложенные схемы будут содержать лекарства и их компоненты."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.MEDICINAL_BIO_INK.NAME"
+msgid "<link=\"PRINTINGPODRECHARGEMEDICINAL\">Medicinal Bio-Ink</link>"
+msgstr "<link=\"PRINTINGPODRECHARGEMEDICINAL\">Медицинские биочернила</link>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.METALLIC_BIO_INK.DESC"
+msgid "Collected unused printing material of a Printing pod. Allows immediate recharging of a Printing Pod, and causes new printables to be metals and metal ores."
+msgstr "Универсальный конструкционный полимер. \n\nПозволяет мгновенно перезарядить печатный станок. \nПредложенные схемы будут содержать металлы и металлические руды."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.METALLIC_BIO_INK.NAME"
+msgid "<link=\"PRINTINGPODRECHARGEMETALLICBIOINK\">Metallic Bio-Ink</link>"
+msgstr "<link=\"PRINTINGPODRECHARGEMETALLICBIOINK\">Металлические биочернила</link>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.SEEDED_BIO_INK.DESC"
+msgid "Collected unused printing material of a Printing pod. Allows immediate recharging of a Printing Pod, and causes the new printables to be seeds of plants."
+msgstr "Универсальный конструкционный полимер. \n\nПозволяет мгновенно перезарядить печатный станок. \nПредложенные схемы будут содержать семена различных растений."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.SEEDED_BIO_INK.NAME"
+msgid "<link=\"PRINTINGPODRECHARGESEEDEDBIOINK\">Seeded Bio-Ink</link>"
+msgstr "<link=\"PRINTINGPODRECHARGESEEDEDBIOINK\">Растительные биочернила</link>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.SHAKER_BIO_INK.DESC"
+msgid "Collected unused printing material of a Printing pod, mixed with a questionable selection of other ingredients. Allows immediate recharging of a Printing Pod, and causes new printables be exclusively Duplicants. \n\n<i>But something appears not quite right...</i>"
+msgstr "Универсальный конструкционный полимер, смешанный с сомнительным набором других ингредиентов. \n\nПозволяет мгновенно перезарядить печатный станок. \nПредложенные схемы будут содержать исключительно дубликатов. \n\n<i>Но что-то, кажется, не совсем так...</i>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.SHAKER_BIO_INK.NAME"
+msgid "<link=\"PRINTINGPODRECHARGECHAOSBIOINK\">Suspicious Bio-Ink</link>"
+msgstr "<link=\"PRINTINGPODRECHARGECHAOSBIOINK\">Сомнительные биочернила</link>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.STATUSITEMS.PRINTINGPODRECHARGE_ASSIGNEDTO.NAME"
+msgid "Assigned to {Assignee} (<b><style=\"logic_off\">{Data}</style></b>)"
+msgstr "Назначено на {Assignee} (<b><style=\"logic_off\">{Data}</style></b>)"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.STATUSITEMS.PRINTINGPODRECHARGE_ASSIGNEDTO.TOOLTIP"
+msgid "When {Assignee} reads this book, their <b><style=\"logic_off\">{Data}</style></b> will be removed permanently."
+msgstr "Когда {Assignee} прочитает эту книгу, его <b><style=\"logic_off\">{Data}</style></b> будут удалены навсегда."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.TWITCH_BIO_INK.DESC"
+msgid "<i>From Twitch chat, with love <3</i>"
+msgstr "<i>Из чата Twitch'a, с любовью <3</i>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.TWITCH_BIO_INK.NAME"
+msgid "<link=\"PRINTINGPODRECHARGETWITCHBIOINK\">Useless Bio-Ink</link>"
+msgstr "<link=\"PRINTINGPODRECHARGETWITCHBIOINK\">Бесполезные биочернила</link>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.VACILLATING_BIO_INK.DESC"
+msgid "Collected unused printing material of a Printing pod. Allows immediate recharging of a Printing Pod, and causes new printables be exclusively Duplicants. These duplicants are likely to have much higher stats than normal, and can have Vacillator exclusive starting traits."
+msgstr "Универсальный конструкционный полимер. \n\nПозволяет мгновенно перезарядить печатный станок. \nПредложенные схемы будут содержать исключительно дубликатов. \nЭти дубликанты могут иметь более высокие характеристики и черты нейронного калибратора."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.ITEMS.VACILLATING_BIO_INK.NAME"
+msgid "<link=\"PRINTINGPODRECHARGEVACILLATINGBIOINK\">Vacillating Bio-Ink</link>"
+msgstr "<link=\"PRINTINGPODRECHARGEVACILLATINGBIOINK\">Откалиброванные биочернила</link>"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.MISC.NAME_PREFIXES"
+msgid "Ma,Jo,Mi,Ell,Ban,Stin,Cata,Nis,Ru,Le,Bubb,Na,Ma,Goss,Lind,De,Re,Fran,A,Li,Bu,Tra,Ha,Ro,O,Tur,Ni,Mee,Je,Cam,Ash,Ste,Ama,Pe,Qui,Jor"
+msgstr "Ма,Джо,Ми,Элл,Бан,Стин,Ката,Нис,Ру,Ле,Бабб,На,Мо,Госс,Линд,Ди,Ре,Фран,А,Ли,Бу,Тра,Ха,Ро,О,Тёр,Ни,Ми,Же,Кам,Аш,Сте,Ама,Пе,Кви,Джор"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.MISC.NAME_SUFFIXES"
+msgid "inn,i,ri,ve,kan,mille,an,eep,la,ner,to,wan,x,rold,valdo,e,am,shua,ky,ssan,hi,kie,n,von,say,rie,mann,ils,-Ma,les,ra,by,lie,sbet,lina,ge"
+msgstr "инн,й,ри,в,кан,милль,ан,ип,ла,нер,то,ван,кс,рольд,вальдо,и,ам,шуа,ки,ссан,хи,ки,н,вон,сей,ри,манн,илс,-Ма,лес,ра,би,ли,сбет,лина,ж"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.MISC.TAGS.PPR_BIOINK"
+msgid "Bio-Ink"
+msgstr "Биочернила"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.TWITCH.FLOOR_UPGRADE.NAME"
+msgid "Floor upgrade"
+msgstr "Обновление этажа"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.TWITCH.FLOOR_UPGRADE.TOAST_GENERIC"
+msgid "Your {RoomType} floor is being upgraded!"
+msgstr "Ваш этаж {RoomType} модернизируется!"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.TWITCH.FLOOR_UPGRADE.TOAST_STABLE"
+msgid "Critters can now also enjoy nice decor."
+msgstr "Звери теперь тоже могут наслаждаться красивым декором."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.TWITCH.HELPFUL_PRINTS.DESC_QUEUED"
+msgid "Helpful prints have been queued."
+msgstr "Полезные схемы добавлены в очередь."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.TWITCH.HELPFUL_PRINTS.DESC_READY"
+msgid "New printables are ready to print."
+msgstr "Новые схемы готовы к печати."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.TWITCH.HELPFUL_PRINTS.NAME"
+msgid "Helpful Care Package"
+msgstr "Полезный посылки"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.TWITCH.HELPFUL_PRINTS.TOAST"
+msgid "Helpful prints are ready!"
+msgstr "Полезные схемы готовы!"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.TWITCH.PRINTING_POD_LEAK.DESC"
+msgid "Your printing pod is leaking ink everywhere!"
+msgstr "Из печатного станка повсюду просачивается лук!"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.TWITCH.PRINTING_POD_LEAK.NAME"
+msgid "Leaky Printing Pod!"
+msgstr "Луковый печатный станок!"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.TWITCH.PRINTING_POD_LEEK.DESC"
+msgid "* The author is profusely apologizing for the typo. *"
+msgstr "* Автор приносит извинения за опечатку. *"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.TWITCH.PRINTING_POD_LEEK.NAME"
+msgid "Leeky Printing Pod!"
+msgstr "Луковый печатный станок!"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.TWITCH.USELESS_PRINTS.DESC_QUEUED"
+msgid "Useless prints have been queued."
+msgstr "Бесполезные схемы добавлены в очередь."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.TWITCH.USELESS_PRINTS.NAME"
+msgid "Useless Care Package"
+msgstr "Бесполезный посылки"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.TWITCH.USELESS_PRINTS.TOAST"
+msgid "Useless prints are ready!"
+msgstr "Бесполезные схемы готовы!"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.TWITCH.WACKY_DUPE.DESC"
+msgid "{0} has been brought into the world!"
+msgstr "{0} появился на свет!"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.TWITCH.WACKY_DUPE.NAME"
+msgid "Spawn a Wacky Dupe"
+msgstr "Создать дурацкого дубликанта"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.TWITCH.WACKY_DUPE.TOAST"
+msgid "Spawned Duplicant"
+msgstr "Порожденный дубликант"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.BIOINKSIDESCREEN.CONTENTS.BUTTONS.ACTIVATE.TEXT"
+msgid "Print"
+msgstr "Напечатать"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.BIOINKSIDESCREEN.CONTENTS.BUTTONS.DELIVER.TEXT"
+msgid "Deliver Bio-Ink"
+msgstr "Доставить биочернила"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.D6BUTTON.LABEL"
+msgid "Reroll ({0})"
+msgstr "Обновить ({0})"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.D6BUTTON.TOOLTIP"
+msgid "Reroll all offers, uses 1 die. You have {0} dice left."
+msgstr "Обновить выбор схем печати за 1 кубик. У вас осталось {0} кубиков."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.DUPE_TIERS.BAD_1"
+msgid "Meh"
+msgstr "Средне"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.DUPE_TIERS.BAD_2"
+msgid "Terrible"
+msgstr "Ужас"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.DUPE_TIERS.GOOD_1"
+msgid "Great"
+msgstr "Отлично"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.DUPE_TIERS.GOOD_2"
+msgid "Super-Duper-Dupe"
+msgstr "Супер-пупер-дубль"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.DUPE_TIERS.OKAY"
+msgid "Okay"
+msgstr "Хорошо"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SANBOXTOOLS.FILTERS.BIO_INKS"
+msgid "Bio-Inks"
+msgstr "Биочернила"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.BUTTONS.CANCELBUTTON.TEXT"
+msgid "Cancel"
+msgstr "Отмена"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.BUTTONS.GITHUBBUTTON.TEXT"
+msgid "Github"
+msgstr "Github"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.BUTTONS.OK.TEXT"
+msgid "Apply"
+msgstr "Применить"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.BUTTONS.STEAMBUTTON.TEXT"
+msgid "Steam Workshop"
+msgstr "Мастерская Steam"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.COLOREDMEEPS.LABEL"
+msgid "Colored Meeps {0}"
+msgstr "Цветные Мипы {0}"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.COLOREDMEEPS.MEEP_MISSING"
+msgid "(mod Meep not installed)"
+msgstr "(мод Мип не установлен)"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.COLOREDMEEPS.TOOLTIP"
+msgid "Should randomly generated meeps have random hair colors, if Meep mod is installed."
+msgstr "Должны ли случайно сгенерированные Мипы иметь случайный цвет волос, если установлен мод Meep?"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.DEBUGMODETOGGLE.LABEL"
+msgid "Debug mode (for testing)"
+msgstr "Режим отладки (для тестирования)"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.DEBUGMODETOGGLE.TOOLTIP"
+msgid "If enabled, an additional panel will show with debug tools. Do not use for gameplay."
+msgstr "Если этот параметр включен, появится дополнительная панель с инструментами отладки. Не использовать для игрового процесса."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.RANDODUPEPRESET.CHOICELABEL"
+msgid "N/A"
+msgstr "Н/Д"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.RANDODUPEPRESET.LABEL"
+msgid "Suspicious Dupe Preset"
+msgstr "Пресет «Сомнительный дубликант»"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.RANDODUPEPRESET.TIERS.DEFAULT"
+msgid "Default"
+msgstr "По умолчанию"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.RANDODUPEPRESET.TIERS.GENEROUS"
+msgid "Generous"
+msgstr "Шикарный"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.RANDODUPEPRESET.TIERS.TERRIBLE"
+msgid "Terrible"
+msgstr "Ужасный"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.RANDODUPEPRESET.TIERS.VANILLAISH"
+msgid "Vanillaish"
+msgstr "Выше среднего"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.RANDODUPEPRESET.TIERS.WACKY"
+msgid "Wacky"
+msgstr "Дурацкий"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.RANDODUPEPRESET.TOOLTIP"
+msgid "Easy tweaks to Rando dupe generation settings. Overrides .json packs unless set to \"Default\"."
+msgstr "Простая настройка параметров генерации случайных дубликатов. Переопределяет пакеты .json, если не установлено значение «По умолчанию»."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.REFUND.LABEL"
+msgid "Refund Quantity:"
+msgstr "Объем возврата:"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.REFUND.QUANTITY"
+msgid "{0}"
+msgstr "{0}"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.REFUND.TOOLTIP"
+msgid "How much ink to refund for a rejected print, in kgs."
+msgstr "Сколько чернил нужно вернуть за отказ от печати, в килограммах."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.REFUNDACTIVETOGGLE.LABEL"
+msgid "Refund Active Ink"
+msgstr "Возврат активных чернил"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.REFUNDACTIVETOGGLE.TOOLTIP"
+msgid "If enabled, when rejecting a print the refunded ink will be the same type as the print."
+msgstr "Если этот параметр включен, при отклонении печати возвращаемые чернила будут того же типа, что и схема."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.REFUNDCYCLE.CHOICELABEL"
+msgid "N/A"
+msgstr "Н/Д"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.REFUNDCYCLE.LABEL"
+msgid "Ink Refund"
+msgstr "Возврат чернил"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.REFUNDCYCLE.OPTIONS.DEFAULT"
+msgid "Default"
+msgstr "По умолчанию"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.REFUNDCYCLE.OPTIONS.DEFAULT_DESCRIPTION"
+msgid "Always refund default ink."
+msgstr "Всегда возвращать базовые биочернила."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.REFUNDCYCLE.OPTIONS.MATCHING"
+msgid "Matching"
+msgstr "Соответствие"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.REFUNDCYCLE.OPTIONS.MATCHING_DESCRIPTION"
+msgid "Refund the same type of ink as was active."
+msgstr "Вернуть тот же тип чернил, что был использован."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.REFUNDCYCLE.OPTIONS.NONE"
+msgid "None"
+msgstr "Ничего"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.REFUNDCYCLE.OPTIONS.NONE_DESCRIPTION"
+msgid "Do not refund. (No way to get inks)."
+msgstr "Никакого возмещения. (Не будет возможности получать чернила)."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.REFUNDCYCLE.TOOLTIP"
+msgid "What happens when you reject a print offer"
+msgstr "Что произойдет, если вы отклоните предложение печати"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.SLIDERPANEL.SLIDER.LABEL"
+msgid "Random Dupe chance"
+msgstr "Вероятность рандомных дублей"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.SLIDERPANEL.SLIDER.RANGELABEL"
+msgid "{0}"
+msgstr "{0}"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.SLIDERPANEL.SLIDER.TOOLTIP"
+msgid "% chance of randomized dupes showing up in prints, not using the Suspicious Ink."
+msgstr "% вероятности появления рандомизированных дубликантов без использования сомнительных биочернил."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.TWITCHINTEGRATION.LABEL"
+msgid "Twitch Integration"
+msgstr "Интеграция с Twitch"
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.CONTENT.TWITCHINTEGRATION.TOOLTIP"
+msgid "Enables several new events for Twitch Integration."
+msgstr "Включает несколько новых событий для интеграции с Twitch."
+
+# 
+msgctxt "PrintingPodRecharge.STRINGS.UI.SETTINGSDIALOG.TITLE.TITLETEXT"
+msgid "Bio-Inks Settings"
+msgstr "Настройки биочернил"
+

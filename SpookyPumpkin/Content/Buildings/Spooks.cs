@@ -5,7 +5,7 @@ namespace SpookyPumpkinSO.Content.Buildings
 {
 	public class Spooks : StateMachineComponent<Spooks.SMInstance>
 	{
-		public override void OnSpawn()
+		protected override void OnSpawn()
 		{
 			base.OnSpawn();
 			smi.StartSM();

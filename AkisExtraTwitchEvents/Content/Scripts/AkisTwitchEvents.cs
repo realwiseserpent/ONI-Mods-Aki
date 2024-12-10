@@ -61,13 +61,13 @@ namespace Twitchery.Content.Scripts
 			lastRadishSpawn = 0;
 		}
 
-		public override void OnPrefabInit()
+        protected override void OnPrefabInit()
 		{
 			base.OnPrefabInit();
 			Instance = this;
 		}
 
-		public override void OnSpawn()
+        protected override void OnSpawn()
 		{
 			base.OnSpawn();
 			OnDraw();
@@ -91,7 +91,7 @@ namespace Twitchery.Content.Scripts
 			RegularPip.regularPipCache.Clear();
 		}
 
-		public override void OnCleanUp()
+        protected override void OnCleanUp()
 		{
 			base.OnCleanUp();
 			Instance = null;

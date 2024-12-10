@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project>
 	<PropertyGroup>
-		<SteamFolder>D:\Programs\Steam</SteamFolder>
+		<SteamFolder>C:\Program Files (x86)\Steam</SteamFolder>
 		<GameLibsFolder>$(SteamFolder)\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed</GameLibsFolder>
 		<PublicisedFolder>D:\Modding\OxygenNotIncluded\PublicisedLib</PublicisedFolder>
-		<ModFolder>$(UserProfile)\Documents\Klei\OxygenNotIncluded\mods\dev</ModFolder>
+		<ModFolder>$(UserProfile)\Documents\Klei\OxygenNotIncluded\mods\1Dev</ModFolder>
 		<FUtilityPath>$(UserProfile)\source\repos\FUtility\FUtility\bin\Debug\net48\FUtility.dll</FUtilityPath>
 		<ClearOutputDirectory>True</ClearOutputDirectory>
 		<Optimize>true</Optimize>
@@ -71,6 +71,11 @@
 		
 		<Reference Include="Newtonsoft.Json">
 			<HintPath>$(GameLibsFolder)/Newtonsoft.Json.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+		
+		<Reference Include="Newtonsoft.Json">
+			<HintPath>$(GameLibsFolder)/UnityEngine.TextRenderingModule.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
 		

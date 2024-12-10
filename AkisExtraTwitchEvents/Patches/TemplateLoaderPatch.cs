@@ -38,8 +38,8 @@ namespace Twitchery.Patches
 					{
 						if (__result.TryGetComponent(out LogicPressureSensor sensor))
 						{
-							sensor.threshold = entry.value;
-							sensor.activateAboveThreshold = true;
+							sensor.Threshold = entry.value;
+							sensor.ActivateAboveThreshold = true;
 						}
 					}
 

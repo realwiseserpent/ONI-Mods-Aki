@@ -1,6 +1,8 @@
 ﻿using FUtility;
+using HarmonyLib;
 using KSerialization;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace SpookyPumpkinSO.Content.Cmps
@@ -14,7 +16,7 @@ namespace SpookyPumpkinSO.Content.Cmps
 		[MyCmpReq] public BuildingFacade buildingFacade;
 		[MyCmpReq] public KBatchedAnimController kbac;
 
-		public override void OnSpawn()
+        protected override void OnSpawn()
 		{
 			base.OnSpawn();
 
@@ -36,7 +38,7 @@ namespace SpookyPumpkinSO.Content.Cmps
 			}
 		}
 
-		public override void OnCleanUp()
+        protected override void OnCleanUp()
 		{
 			base.OnCleanUp();
 			Mod.facadeRestorers.Remove(this);
@@ -44,10 +46,14 @@ namespace SpookyPumpkinSO.Content.Cmps
 
 		public void OnSaveGame()
 		{
-			if (SPFacades.myFacades.Contains(buildingFacade.currentFacade))
+			if (SPFacades.myFacades.Contains(buildingFacade.CurrentFacade))
 			{
-				facadeID = buildingFacade.currentFacade;
-				buildingFacade.currentFacade = null;
+				facadeID = buildingFacade.CurrentFacade;
+
+                Traverse traverse = Traverse.Create(buildingFacade).Field("currentFacade");
+                traverse.SetValue(null);
+
+                //buildingFacade.CurrentFacade = null;
 			}
 			else
 				facadeID = null;
@@ -56,7 +62,11 @@ namespace SpookyPumpkinSO.Content.Cmps
 		public void AfterSave()
 		{
 			if (facadeID != null)
-				buildingFacade.currentFacade = facadeID;
+			{
+                Traverse traverse = Traverse.Create(buildingFacade).Field("currentFacade");
+                traverse.SetValue(facadeID);
+                //buildingFacade.CurrentFacade = facadeID;
+			}
 		}
 	}
 }

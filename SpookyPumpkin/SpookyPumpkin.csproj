@@ -11,7 +11,7 @@
 		<GenerateMetadata>true</GenerateMetadata>
 		<FUtility>true</FUtility>
 		<IsPacked>true</IsPacked>
-		<UsePublicised>true</UsePublicised>
+		<UsePublicised>False</UsePublicised>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	</PropertyGroup>
 

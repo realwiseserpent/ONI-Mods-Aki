@@ -19,7 +19,7 @@ namespace SpookyPumpkinSO.Content.Buildings
 			currentFace = -1;
 		}
 
-		public override void OnSpawn()
+        protected override void OnSpawn()
 		{
 			base.OnSpawn();
 

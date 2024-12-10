@@ -7,7 +7,7 @@ namespace Twitchery.Content.Scripts.RegularPipChores
 	{
 		[SerializeField] public float kcalPerKg;
 
-		public override void OnSpawn()
+        protected override void OnSpawn()
 		{
 			base.OnSpawn();
 			SetWorkTime(10f);
@@ -23,7 +23,7 @@ namespace Twitchery.Content.Scripts.RegularPipChores
 			new RegularPipEatChore(this);
 		}
 
-		public override void OnCompleteWork(Worker worker)
+        protected override void OnCompleteWork(Worker worker)
 		{
 			base.OnCompleteWork(worker);
 

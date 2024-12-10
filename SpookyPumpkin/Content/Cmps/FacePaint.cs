@@ -17,13 +17,13 @@ namespace SpookyPumpkinSO.Content.Cmps
 
 		private static AccessTools.FieldRef<Accessorizer, List<ResourceRef<Accessory>>> ref_accessories;
 
-		public override void OnPrefabInit()
+        protected override void OnPrefabInit()
 		{
 			base.OnPrefabInit();
 			ref_accessories = AccessTools.FieldRefAccess<Accessorizer, List<ResourceRef<Accessory>>>("accessories");
 		}
 
-		public override void OnSpawn()
+        protected override void OnSpawn()
 		{
 			base.OnSpawn();
 

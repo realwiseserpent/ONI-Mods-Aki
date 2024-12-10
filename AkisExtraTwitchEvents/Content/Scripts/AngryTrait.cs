@@ -13,7 +13,7 @@ namespace Twitchery.Content.Scripts
 
 		private const float LOW_TRESHOLD = 0.2f;
 
-		public override void OnSpawn()
+        protected override void OnSpawn()
 		{
 			base.OnSpawn();
 			kbac.animScale *= 1.3f;

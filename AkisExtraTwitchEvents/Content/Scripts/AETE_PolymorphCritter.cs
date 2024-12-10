@@ -44,7 +44,7 @@ namespace Twitchery.Content.Scripts
 			}
 		}
 
-		public override void OnSpawn()
+        protected override void OnSpawn()
 		{
 			base.OnSpawn();
 			kSelectable.AddStatusItem(TStatusItems.PolymorphStatus, this);
@@ -68,7 +68,7 @@ namespace Twitchery.Content.Scripts
 			Mod.polys.Add(this);
 		}
 
-		public override void OnCleanUp()
+        protected override void OnCleanUp()
 		{
 			//Util.KDestroyGameObject(hatTracker.gameObject);
 			ReleaseMinions();

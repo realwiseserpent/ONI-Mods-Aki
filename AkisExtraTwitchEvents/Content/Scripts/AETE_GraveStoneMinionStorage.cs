@@ -27,7 +27,7 @@ namespace Twitchery.Content.Scripts
 			minionData = null;
 		}
 
-		public override void OnSpawn()
+        protected override void OnSpawn()
 		{
 			base.OnSpawn();
 			Mod.graves.Add(this);
@@ -96,7 +96,7 @@ namespace Twitchery.Content.Scripts
 		}
 
 
-		public override void OnCleanUp()
+        protected override void OnCleanUp()
 		{
 			base.OnCleanUp();
 			Mod.graves.Remove(this);
