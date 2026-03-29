@@ -27,7 +27,7 @@ namespace Twitchery.Content.Events.EventTypes
 			spawner.minDelay = 0.5f;
 			spawner.maxDelay = 1f;
 			spawner.soundFx = ModAssets.Sounds.POP;
-			spawner.sceneLayer = Grid.SceneLayer.FXFront2;
+			spawner.sceneLayer = Grid.SceneLayer.Creatures;
 			spawner.spawnFx = ModAssets.Fx.fungusPoof;
 			spawner.z = Grid.GetLayerZ(Grid.SceneLayer.FXFront2);
 			spawner.followCursor = true;

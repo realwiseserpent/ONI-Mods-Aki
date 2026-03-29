@@ -84,6 +84,7 @@ namespace Twitchery.Content.Scripts
 			foreach (var cell in _cellsInRadius)
 			{
 				if (Grid.IsValidCell(cell)
+					&& !AGridUtil.protectedCells.Contains(cell)
 					&& Grid.WorldIdx[cell] == _myWorldIdx
 					&& (!Grid.Foundation[cell] || affectFoundation))
 

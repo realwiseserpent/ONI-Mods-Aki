@@ -1,4 +1,5 @@
-﻿using ImGuiNET;
+﻿using HarmonyLib;
+using ImGuiNET;
 using System.Collections.Generic;
 using Twitchery.Utils;
 using UnityEngine;
@@ -82,6 +83,33 @@ namespace Twitchery.Content.Scripts.WorldEvents
 			return power * powerMultiplier;
 		}
 
+		[HarmonyPatch(typeof(Diggable), "DoDigTick", [
+				typeof(int),
+					typeof(float),
+					typeof(WorldDamage.DamageType)
+				])]
+		public class Diggable_DoDigTick_Patch
+		{
+			public static bool Prefix(int cell, float dt, WorldDamage.DamageType damageType)
+			{
+				var approximateDigTime = Diggable.GetApproximateDigTime(cell);
+
+				Log.Debug($"approximateDigTime {approximateDigTime}");
+
+				var amount = dt / approximateDigTime;
+				Log.Debug($"amount {amount}");
+				Log.Debug($"dmg before {Grid.Damage[cell]}");
+				var num = (double)WorldDamage.Instance.ApplyDamage(cell, amount, -1, damageType);
+				Log.Debug($"dmg after {Grid.Damage[cell]}");
+				Log.Debug($"num {num}");
+				Log.Debug($"mass {Grid.Mass[cell]}");
+				Log.Debug($"is solid {Grid.Solid[cell].ToString()}");
+
+
+				return false;
+			}
+
+		}
 		public void Sim33ms(float dt)
 		{
 			elapsedTime += dt;

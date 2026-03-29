@@ -14,7 +14,7 @@ namespace Twitchery.Content.Events.EventTypes
 		public override void Run()
 		{
 			var position = ONITwitchLib.Utils.PosUtil.ClampedMouseCellWorldPos();
-			var circle = ProcGen.Util.GetFilledCircle(position, 3);
+			var circle = ProcGen.Util.GetFilledCircle(position, 5);
 
 			foreach (var pos in circle)
 			{

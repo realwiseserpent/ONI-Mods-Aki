@@ -22,7 +22,7 @@ namespace Twitchery.Content.Defs
 				TUNING.DECOR.BONUS.TIER8);
 
 			prefab.AddComponent<MinionStorage>();
-			prefab.AddComponent<MidasEntityContainer>();
+			prefab.AddComponent<MidasEntityContainer>().releaseOnTimer = true;
 			var fx = prefab.AddComponent<HighlightFx>();
 			fx.goalTintColor = Color.yellow;
 			fx.duration = 3f;

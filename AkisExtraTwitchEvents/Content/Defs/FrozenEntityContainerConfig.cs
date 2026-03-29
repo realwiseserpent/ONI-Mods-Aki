@@ -24,7 +24,7 @@ namespace Twitchery.Content.Defs
 				defaultTemperature: GameUtil.GetTemperatureConvertedToKelvin(-6, GameUtil.TemperatureUnit.Celsius));
 
 			prefab.AddComponent<MinionStorage>();
-			prefab.AddComponent<FrozenEntityContainer>();
+			prefab.AddComponent<FrozenEntityContainer>().releaseOnTimer = false;
 
 			var fx = prefab.AddComponent<HighlightFx>();
 			fx.goalTintColor = Color.blue;

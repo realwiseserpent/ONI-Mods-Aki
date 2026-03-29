@@ -73,7 +73,8 @@ namespace Twitchery.Content.Scripts.WorldEvents
 		public float DamageTile(int cell, float inputDamage, bool crushing = false, float crushChance = 1f, bool spawnFX = true)
 		{
 			if (!Grid.IsValidCell(cell)
-				|| Grid.Element[cell].id == SimHashes.Unobtanium) return 0;
+				|| Grid.Element[cell].id == SimHashes.Unobtanium)
+				return 0;
 
 			var gameObject = Grid.Objects[cell, (int)ObjectLayer.FoundationTile];
 
@@ -94,20 +95,22 @@ namespace Twitchery.Content.Scripts.WorldEvents
 				return 0;
 			}
 
-			if (element.strength == 0f) return 0f;
+			if (element.strength == 0f)
+				return 0f;
 
-			var damage = inputDamage * damageMultiplier / element.strength;
+			var damage = (inputDamage * damageMultiplier) / element.strength;
 
 			PlayTileDamageSound(element, Grid.CellToPos(cell));
 			Game.Instance.SpawnFX(SpawnFXHashes.BuildingLeakGas, Grid.CellToPos(cell), 0f);
 
-			if (damage == 0f) return 0f;
+			if (damage == 0f)
+				return 0f;
 
-			float dealtdamage;
+			var dealtDamage = Mathf.Clamp(damage, 0.0f, 1.0f);
 
-			dealtdamage = WorldDamage.Instance.ApplyDamage(cell, damage, cell, "Sinkhole", "Sinkhole");
+			var finalDamage = WorldDamage.Instance.ApplyDamage(cell, dealtDamage, -1, "Sinkhole", "Sinkhole");
 
-			return inputDamage * (1f - (float)(dealtdamage / damage));
+			return finalDamage;
 		}
 
 		private void PlayTileDamageSound(Element element, Vector3 pos)

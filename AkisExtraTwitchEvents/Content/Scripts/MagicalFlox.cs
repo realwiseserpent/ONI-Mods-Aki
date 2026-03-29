@@ -70,7 +70,7 @@ namespace Twitchery.Content.Scripts
 
 		public List<Descriptor> GetDescriptors(GameObject go)
 		{
-			return [new Descriptor($"{FUtility.Utils.FormatAsLink("Temperature", "HEAT")}: {GameUtil.GetFormattedTemperature(temperatureShift, GameUtil.TimeSlice.PerSecond, GameUtil.TemperatureInterpretation.Relative)}", "tooltip")];
+			return [new Descriptor($"{FUtility.Utils.FormatAsLink("Temperature", "HEAT")}: {GameUtil.GetFormattedTemperature(temperatureShift, GameUtil.TimeSlice.PerSecond, GameUtil.TemperatureInterpretation.Relative)}", STRINGS.UI.AKIS_EXTRA_TWITCH_EVENTS.FLOX_TEMPERATURE_TOOLTIP)];
 		}
 	}
 }

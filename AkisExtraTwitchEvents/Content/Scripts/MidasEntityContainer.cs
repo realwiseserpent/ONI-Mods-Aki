@@ -14,8 +14,9 @@ namespace Twitchery.Content.Scripts
 		[MyCmpReq] protected KBoxCollider2D collider;
 
 		[Serialize] public float timeRemaining;
+		[Serialize] public bool releaseOnTimer;
 		[Serialize] public string sprite;
-		[Serialize] public bool storedItem;
+		[Serialize] public bool storedAnything;
 		[Serialize] public bool storedMinion;
 		[Serialize] public HashedString currentAnim;
 		[Serialize] public float positionPercent;
@@ -40,7 +41,7 @@ namespace Twitchery.Content.Scripts
 			base.OnSpawn();
 			GetComponent<KSelectable>().AddStatusItem(GetStatusItem(), this);
 
-			if (restoreAnim && (storedItem || storedMinion))
+			if (restoreAnim && (storedAnything || storedMinion))
 				StartCoroutine(RestoreAnim());
 
 			Mod.midasContainers.Add(this);
@@ -60,7 +61,40 @@ namespace Twitchery.Content.Scripts
 			if (Components.LiveMinionIdentities.GetWorldItems(this.GetMyWorldId()).Count <= 1)
 			{
 				PopFXManager.Instance.SpawnFX(PopFXManager.Instance.sprite_Building, STRINGS.UI.AKIS_EXTRA_TWITCH_EVENTS.RESISTED, identity.transform);
+
 				return;
+			}
+
+			StartCoroutine(StoreCoroutine(identity, duration));
+		}
+
+
+		private float elapsedTime = 0.0f;
+
+		private IEnumerator StoreCoroutine(MinionIdentity identity, float duration)
+		{
+			elapsedTime = 0.0f;
+
+			var reactionMonitor = identity.GetSMI<ReactionMonitor.Instance>();
+
+			if (reactionMonitor == null)
+			{
+				Object.Destroy(gameObject);
+				yield return null;
+			}
+
+			while (reactionMonitor.IsInsideState(reactionMonitor.sm.reacting))
+			{
+				elapsedTime += Time.deltaTime;
+
+				if (elapsedTime > 10.0f)
+				{
+					// waited a long time but the dupe is too busy to be frozen
+					Object.Destroy(gameObject);
+					yield return null;
+				}
+
+				yield return SequenceUtil.waitForEndOfFrame;
 			}
 
 			Store(identity.gameObject, duration, false);
@@ -74,19 +108,19 @@ namespace Twitchery.Content.Scripts
 
 		public virtual void StoreCritter(GameObject critter, float duration)
 		{
-			if (storedItem)
+			if (storedAnything)
 				return;
 
 			Store(critter, duration, false);
 			storage.Store(critter, true);
 
-			storedItem = true;
+			storedAnything = true;
 			restoreAnim = false;
 		}
 
 		private IEnumerator RestoreAnim()
 		{
-			var item = Release(false);
+			var item = Release(false, "Restoring Animation");
 
 			yield return new WaitForEndOfFrame();
 
@@ -109,6 +143,7 @@ namespace Twitchery.Content.Scripts
 			CopyAnim(go);
 			CopyCollider(go);
 			timeRemaining = duration;
+			releaseOnTimer = duration > 0;
 
 			if (TryGetComponent(out KSelectable kSelectable))
 				kSelectable.SetName(go.GetProperName());
@@ -116,7 +151,7 @@ namespace Twitchery.Content.Scripts
 			if (go.TryGetComponent(out KPrefabID kPrefabID))
 				kPrefabID.AddTag(TTags.midased, true);
 
-			storedItem = true;
+			storedAnything = true;
 		}
 
 		private void CopyCollider(GameObject go)
@@ -193,8 +228,9 @@ namespace Twitchery.Content.Scripts
 			OnAnimationUpdated(original);
 		}
 
-		public GameObject Release(bool removeTag)
+		public GameObject Release(bool removeTag, string reason)
 		{
+			Log.Debug($"releasing stored item {reason}");
 			if (removeTag)
 			{
 				foreach (var item in storage.items)
@@ -227,13 +263,24 @@ namespace Twitchery.Content.Scripts
 			return null;
 		}
 
-		public bool HasStoredItem() => storedItem || storedMinion;
+		public bool HasStoredItem() => storedAnything || storedMinion;
 
 		public void Sim200ms(float dt)
 		{
-			if (HasStoredItem() && storage.IsEmpty())
+			var storedItem = storedAnything && !storedMinion;
+
+			if (storedItem && storage.IsEmpty())
 			{
-				Release(true);
+				Release(true, "Empty Storage for item");
+				Util.KDestroyGameObject(gameObject);
+
+				return;
+			}
+
+
+			if (storedMinion && (minionStorage.serializedMinions == null || minionStorage.serializedMinions.Count == 0))
+			{
+				Release(true, "Empty MinionStorage for minion");
 				Util.KDestroyGameObject(gameObject);
 
 				return;
@@ -241,9 +288,9 @@ namespace Twitchery.Content.Scripts
 
 			timeRemaining -= dt;
 
-			if (timeRemaining <= 0)
+			if (releaseOnTimer && timeRemaining <= 0)
 			{
-				Release(true);
+				Release(true, "Duration Expired");
 				Util.KDestroyGameObject(gameObject);
 			}
 

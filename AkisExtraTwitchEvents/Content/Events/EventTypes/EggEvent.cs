@@ -1,5 +1,5 @@
 ﻿using ONITwitchLib;
-using Twitchery.Content.Scripts;
+using Twitchery.Content.Scripts.Visual;
 
 namespace Twitchery.Content.Events.EventTypes
 {
@@ -13,7 +13,8 @@ namespace Twitchery.Content.Events.EventTypes
 
 		public override void Run()
 		{
-			AkisTwitchEvents.Instance.eggFx.Activate();
+			//AkisTwitchEvents.Instance.eggFx.Activate();
+			AETE_CameraEffects.Instance.Activate();
 		}
 	}
 }

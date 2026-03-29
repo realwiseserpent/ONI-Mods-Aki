@@ -109,6 +109,12 @@ namespace Twitchery.Content.Events.EventTypes
 				return;
 			}
 
+			if (spawnQueue.Count > Mod.Settings.MaxDupes)
+			{
+				spawnQueue.Shuffle();
+				spawnQueue = [.. spawnQueue.Take(Mod.Settings.MaxDupes)];
+			}
+
 			// First try to find a printing pod, since that should always be in a free location.
 			var pods = Components.Telepads.Items;
 			if (pods.Count > 0)

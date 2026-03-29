@@ -10,7 +10,7 @@ namespace Twitchery.Content.Events.EventTypes
 
 		public override Danger GetDanger() => Danger.Medium;
 
-		public override int GetWeight() => Consts.EventWeight.Uncommon;
+		public override int GetWeight() => Consts.EventWeight.Uncommon + 3;
 
 		public override void Run()
 		{

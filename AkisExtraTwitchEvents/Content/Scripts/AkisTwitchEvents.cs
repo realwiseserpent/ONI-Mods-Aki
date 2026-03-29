@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Twitchery.Content.Defs;
 using Twitchery.Content.Events;
+using Twitchery.Content.Scripts.Visual;
 using Twitchery.Content.Scripts.WorldEvents;
 using Twitchery.Utils;
 using UnityEngine;
@@ -34,6 +35,7 @@ namespace Twitchery.Content.Scripts
 		[Serialize] public bool hasUnlockedPizzaRecipe;
 		[Serialize] public float harvestMoonRemaining;
 		[Serialize] public bool hasFixedBottomBorder;
+		[Serialize] public bool hasFixedInfiniteTiles;
 
 		[Serialize] public Dictionary<int, ZoneType> zoneTypeOverrides = [];
 		[Serialize] public Dictionary<int, ZoneType> pendingZoneTypeOverrides = [];
@@ -310,6 +312,7 @@ namespace Twitchery.Content.Scripts
 		public bool hideLiquids;
 		public bool eggActive;
 		public AETE_EggPostFx eggFx;
+		public AETE_CameraEffects camEffects;
 
 		public static EventInfo polymorphEvent;
 		//public static MinionIdentity polymorphTarget;
@@ -570,7 +573,34 @@ namespace Twitchery.Content.Scripts
 			if (addBiomeOverrideFn == null)
 				StartCoroutine(UpdateZoneTypes());
 
+			if (!hasFixedInfiniteTiles)
+			{
+				StartCoroutine(FixInfiniteDamageTiles());
+			}
 			//FixBottomBorder();
+		}
+
+		public IEnumerator FixInfiniteDamageTiles()
+		{
+			Log.Debug("FixInfiniteDamageTiles");
+
+			yield return SequenceUtil.waitForEndOfFrame;
+			yield return SequenceUtil.waitForEndOfFrame;
+
+			for (var cell = Grid.CellCount; cell < Grid.CellCount; cell++)
+			{
+				if (Grid.IsValidCell(cell))
+				{
+					if (Grid.Damage[cell] < 1.0f)
+					{
+						Log.Info($"Removed incorrect tile data.{Grid.Damage[cell]}");
+						SimMessages.ReplaceElement(cell, SimHashes.Vacuum, AGridUtil.cellEvent, 0f);
+					}
+
+					if (Grid.Damage[cell] != 0)
+						Log.Debug($"non zero cell {cell} {Grid.Damage[cell]}");
+				}
+			}
 		}
 
 		private void OnHarvestMoonSet(object data)

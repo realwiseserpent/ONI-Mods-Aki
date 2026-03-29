@@ -110,6 +110,8 @@ namespace Twitchery.Content.Scripts.Touchers
 				GameScenePartitioner.Instance.pickupablesLayer,
 				entries);
 
+			var moreThanOneMinion = Components.LiveMinionIdentities.GetWorldItems(this.GetMyWorldId()).Count > 1;
+
 			foreach (var entry in entries)
 			{
 				if (entry.obj is Pickupable pickupable)
@@ -119,11 +121,21 @@ namespace Twitchery.Content.Scripts.Touchers
 
 					if (pickupable.TryGetComponent(out MinionIdentity minionIdentity))
 					{
-						if (minionIdentity.model == GameTags.Minions.Models.Standard)
+						if (!MidasToucher.DISABLE_DUPES)
 						{
-							var midasContainer = FUtility.Utils.Spawn(FrozenEntityContainerConfig.ID, pickupable.gameObject);
-							midasContainer.GetComponent<FrozenEntityContainer>().StoreMinion(minionIdentity, float.PositiveInfinity);
-							PlaySound(midasContainer.transform.position);
+							if (minionIdentity.model == GameTags.Minions.Models.Standard)
+							{
+								if (moreThanOneMinion)
+								{
+									var midasContainer = FUtility.Utils.Spawn(FrozenEntityContainerConfig.ID, pickupable.gameObject);
+									midasContainer.GetComponent<FrozenEntityContainer>().StoreMinion(minionIdentity, float.PositiveInfinity);
+									PlaySound(midasContainer.transform.position);
+								}
+								else
+								{
+									PopFXManager.Instance.SpawnFX(PopFXManager.Instance.sprite_Building, STRINGS.UI.AKIS_EXTRA_TWITCH_EVENTS.RESISTED, minionIdentity.transform);
+								}
+							}
 						}
 					}
 					else if (pickupable.HasTag(GameTags.CreatureBrain))

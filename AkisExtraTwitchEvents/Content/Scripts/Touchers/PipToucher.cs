@@ -1,4 +1,6 @@
-﻿using ONITwitchLib.Utils;
+﻿using ONITwitchLib;
+using ONITwitchLib.Utils;
+using System.Collections.Generic;
 using Twitchery.Content.Defs.Debris;
 using Twitchery.Utils;
 using UnityEngine;
@@ -25,6 +27,21 @@ namespace Twitchery.Content.Scripts.Touchers
 			AudioUtil.PlaySound(ModAssets.Sounds.PIP, ModAssets.GetSFXVolume() * Random.Range(0.9f, 1.1f), Random.Range(0.9f, 1.1f));
 		}
 
+		private static List<(string prefabId, Danger danger)> seeds = [
+			(BasicSingleHarvestPlantConfig.SEED_ID, Danger.None),
+			(BasicFabricMaterialPlantConfig.SEED_ID, Danger.None),
+			(ForestTreeConfig.SEED_ID, Danger.None),
+			(ForestTreeConfig.SEED_ID, Danger.None),
+			(ForestTreeConfig.SEED_ID, Danger.None),
+			(BeanPlantConfig.SEED_ID, Danger.None),
+			(SaltPlantConfig.SEED_ID, Danger.None),
+			(SpiceVineConfig.SEED_ID, Danger.None),
+			(CylindricaConfig.SEED_ID, Danger.None),
+			(EvilFlowerConfig.SEED_ID, Danger.High),
+			("CritterTrapPlantSeed", Danger.Medium),
+			(BasicSingleHarvestPlantConfig.ID, Danger.None),
+			];
+
 		public override void OnPrefabInit()
 		{
 			base.OnPrefabInit();
@@ -32,6 +49,18 @@ namespace Twitchery.Content.Scripts.Touchers
 			//stainedGlassDefs = [.. glassTileIds.Select(Assets.GetBuildingDef)];
 
 			arborTreeSeed = Assets.GetPrefab(ForestTreeConfig.SEED_ID).GetComponent<PlantableSeed>();
+		}
+
+		private string GetSeed(Danger maxDanger)
+		{
+			seeds.Shuffle();
+			foreach (var seed in seeds)
+			{
+				if (seed.danger <= maxDanger)
+					return seed.prefabId;
+			}
+
+			return CylindricaConfig.ID;
 		}
 
 		public override bool UpdateCell(int cell, float dt)
@@ -78,6 +107,11 @@ namespace Twitchery.Content.Scripts.Touchers
 		{
 			if (AGridUtil.PlaceElementOnlyWithClearance(cell, existingElement, Elements.Pipium, Random.Range(2, 4), tempOverride: 300.0f))
 			{
+				if (Random.value < 0.1f)
+				{
+					FUtility.Utils.Spawn(GetSeed(AkisTwitchEvents.MaxDanger), Grid.CellToPosCCC(cell, Grid.SceneLayer.Ore) with { z = Grid.GetLayerZ(Grid.SceneLayer.Ore) });
+				}
+
 				SpawnFeedbackAnimation(cell);
 				return true;
 			}

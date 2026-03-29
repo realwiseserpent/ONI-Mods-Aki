@@ -36,6 +36,9 @@ namespace Twitchery.Content
 			var list = PocketDimensionSettings as IList;
 
 			// TODO
+#if DEBUG
+			list.Clear();
+#endif
 
 			if (DlcManager.IsExpansion1Active())
 			{
@@ -67,7 +70,7 @@ namespace Twitchery.Content
 			AddDimension(
 				templateGeneration,
 				list,
-				6f,
+					0.05f,
 				SubWorld.ZoneType.Sandstone,
 				"akis_extra_twitch_events/pocket_dimensions/derpypip");
 

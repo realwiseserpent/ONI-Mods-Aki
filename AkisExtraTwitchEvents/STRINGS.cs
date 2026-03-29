@@ -1064,19 +1064,20 @@ namespace Twitchery
 			{
 				[Note("References Glommer's Goop from Don't Starve")]
 				public static LocString NAME = FUtility.Utils.FormatAsLink("Goop", Elements.PinkSlime.ToString());
-				public static LocString DESC = "A goopy, sticky, slimy liquid.";
+				public static LocString DESC = "A goopy, sticky, slimy liquid.\n\n" +
+					"Stacks like Visco-Gel, which means this is really good to make liquid locks with, but pumps may struggle with it and will severely slow Duplicants stepping in it. Useful as a coolant. Can be cooked into Parfait at an electric grill. ";
 			}
 
 			public static class AETE_HONEY
 			{
 				public static LocString NAME = FUtility.Utils.FormatAsLink("Honey", Elements.Honey.ToString());
-				public static LocString DESC = "Sweet nectar harvested from local bears.";
+				public static LocString DESC = $"Sweet nectar harvested from local bears. Can be put into a {FUtility.Utils.FormatAsLink("Water Cooler", WaterCoolerConfig.ID)} for a regenerative effect.";
 			}
 
 			public static class AETE_MACARONI
 			{
 				public static LocString NAME = FUtility.Utils.FormatAsLink("Macaroni", Elements.Macaroni.ToString());
-				public static LocString DESC = $"Elbow shaped crunchy and dry pasta. \n\nCan be eaten raw, or cooked into {FUtility.Utils.FormatAsLink("Mac N' Cheese", MacAndCheeseConfig.ID)}.";
+				public static LocString DESC = $"Elbow shaped crunchy and dry pasta. \n\nCan be eaten raw, or cooked into {FUtility.Utils.FormatAsLink("Mac N' Cheese", MacAndCheeseConfig.ID)}, or used as a raw mineral building material.";
 			}
 
 			public static class AETE_FROZENHONEY
@@ -1094,7 +1095,7 @@ namespace Twitchery
 			public static class AETE_PIPIUM
 			{
 				public static LocString NAME = FUtility.Utils.FormatAsLink("Pipium", Elements.Pipium.ToString());
-				public static LocString DESC = $"A block of densely compressed {FUtility.Utils.FormatAsLink("Pips", SquirrelConfig.ID)}.";
+				public static LocString DESC = $"A block of densely compressed {FUtility.Utils.FormatAsLink("Pips", SquirrelConfig.ID)}. When dug out, releases 1 live pip per 1kg of Pipium.";
 			}
 
 			public static class AETE_JELLO
@@ -1128,7 +1129,7 @@ namespace Twitchery
 			public static class AETE_YELLOWSNOW
 			{
 				public static LocString NAME = FUtility.Utils.FormatAsLink("Yellow Snow", Elements.YellowSnow.ToString());
-				public static LocString DESC = "Mass of crystallized polluted water. ";
+				public static LocString DESC = "Lemon flavored Snow! If you don't believe me, lick it for proof!";
 			}
 		}
 
@@ -1170,7 +1171,8 @@ namespace Twitchery
 				public static class AKISEXTRATWITCHEVENTS_MAGICALFLOX
 				{
 					public static LocString NAME = FUtility.Utils.FormatAsLink($"Magical Flox", MagicalFloxConfig.ID);
-					public static LocString DESC = $"A mythical Flox plucked from the memories of this land.";
+					public static LocString DESC = $"A mythical Flox plucked from the memories of this land.\n\n" +
+						$"Ambiently cools it's environment. Has infinite lifetime, but can die to direct damage. Can be shorn for wood, like actual flox-es.";
 				}
 
 #if WEREVOLE
@@ -1204,6 +1206,7 @@ namespace Twitchery
 				public static LocString PROTECTED = "Protected";
 				public static LocString RESISTED = "Resisted";
 				public static LocString COULD_NOT_PLACE = "Placement Failed";
+				public static LocString FLOX_TEMPERATURE_TOOLTIP = "Average temperature change per second around this critter.";
 
 				public static class UNLOAD
 				{

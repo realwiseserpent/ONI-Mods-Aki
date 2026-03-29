@@ -65,7 +65,7 @@ namespace Twitchery.Content.Scripts
 			if (iceCubeOverlay != null)
 				Util.KDestroyGameObject(iceCubeOverlay);
 
-			Release(true);
+			Release(true, "Clean Up");
 			base.OnCleanUp();
 			Mod.midasContainers.Remove(this);
 		}
@@ -74,7 +74,7 @@ namespace Twitchery.Content.Scripts
 		{
 			if (primaryElement.Temperature > 273.15)
 			{
-				Release(true);
+				Release(true, "Thawed");
 				Util.KDestroyGameObject(gameObject);
 			}
 		}
