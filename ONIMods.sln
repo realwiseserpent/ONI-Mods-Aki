@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31912.275
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11520.95 d18.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F360AC6D-8174-4A84-8F4B-E74ABBB987DD}"
 	ProjectSection(SolutionItems) = preProject
@@ -77,6 +77,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackwallsUIPort", "BackwallsUIPort\BackwallsUIPort.csproj", "{315DD8CA-71CD-4F04-872B-EF8E6C5BAD3A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDeconstruct", "SmartDeconstruct\SmartDeconstruct.csproj", "{20018C09-2F73-8F43-B960-A456038C0107}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarterColony", "StarterColony\StarterColony.csproj", "{7EBFD8FC-152B-4268-91BD-892EACA0AA19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -260,6 +262,12 @@ Global
 		{20018C09-2F73-8F43-B960-A456038C0107}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{20018C09-2F73-8F43-B960-A456038C0107}.Release2|Any CPU.ActiveCfg = Release2|Any CPU
 		{20018C09-2F73-8F43-B960-A456038C0107}.Release2|Any CPU.Build.0 = Release2|Any CPU
+		{7EBFD8FC-152B-4268-91BD-892EACA0AA19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EBFD8FC-152B-4268-91BD-892EACA0AA19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EBFD8FC-152B-4268-91BD-892EACA0AA19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EBFD8FC-152B-4268-91BD-892EACA0AA19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EBFD8FC-152B-4268-91BD-892EACA0AA19}.Release2|Any CPU.ActiveCfg = Release|Any CPU
+		{7EBFD8FC-152B-4268-91BD-892EACA0AA19}.Release2|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -294,6 +302,7 @@ Global
 		{B2B4B56A-C73A-4CCC-9F66-9310A5BCC89B} = {266A2883-1ED0-4776-A75D-FB19FB6E4484}
 		{315DD8CA-71CD-4F04-872B-EF8E6C5BAD3A} = {266A2883-1ED0-4776-A75D-FB19FB6E4484}
 		{20018C09-2F73-8F43-B960-A456038C0107} = {266A2883-1ED0-4776-A75D-FB19FB6E4484}
+		{7EBFD8FC-152B-4268-91BD-892EACA0AA19} = {2568D3BC-2D63-4CF6-8EA3-5BA2676A95EF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {433E97C8-02F9-4A0E-B42E-54A4CE2EA2A6}

@@ -10,7 +10,7 @@ namespace FUtility.FUI
 		public Image mark;
 
 		public event System.Action OnClick;
-		public event System.Action OnChange;
+		public event System.Action<bool> OnChange;
 
 		private bool on;
 
@@ -23,7 +23,7 @@ namespace FUtility.FUI
 				if (mark != null)
 					mark.enabled = value;
 
-				OnChange?.Invoke();
+				OnChange?.Invoke(value);
 			}
 		}
 
