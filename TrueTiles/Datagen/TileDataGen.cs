@@ -30,6 +30,7 @@ namespace TrueTiles.Datagen
 			AIRFLOW = "airflow",
 			METAL = "metal",
 			WINDOW = "window",
+			WOOD = "wood",
 			PLASTIC = "plastic";
 
 		public TileDataGen(string path) : base(path)
@@ -86,12 +87,16 @@ namespace TrueTiles.Datagen
 				.AddSimpleTile(TILE, SimHashes.Graphite.ToString())
 				.AddSimpleTile(TILE, SimHashes.IgneousRock.ToString())
 				.AddSimpleTile(TILE, SimHashes.Isoresin.ToString())
+				.AddSimpleTile(TILE, SimHashes.Katairite.ToString())
 				.AddSimpleTile(TILE, SimHashes.MaficRock.ToString())
 				.AddSimpleTile(TILE, SimHashes.Obsidian.ToString())
 				.AddSimpleTile(TILE, SimHashes.SandStone.ToString())
 				.AddSimpleTile(TILE, SimHashes.SedimentaryRock.ToString())
 				.AddSimpleTile(TILE, SimHashes.Shale.ToString())
 				.AddSimpleTile(TILE, SimHashes.SuperInsulator.ToString());
+
+			AddTiles(tiles, WoodTileConfig.ID)
+				.AddSimpleTile(WOOD, SimHashes.FabricatedWood.ToString(), true);
 
 			AddTiles(tiles, CarpetTileConfig.ID)
 				.AddSimpleTile(CARPET, SimHashes.Ceramic.ToString())
@@ -100,6 +105,7 @@ namespace TrueTiles.Datagen
 				.AddSimpleTile(CARPET, SimHashes.Graphite.ToString())
 				.AddSimpleTile(CARPET, SimHashes.IgneousRock.ToString())
 				.AddSimpleTile(CARPET, SimHashes.Isoresin.ToString())
+				.AddSimpleTile(CARPET, SimHashes.Katairite.ToString())
 				.AddSimpleTile(CARPET, SimHashes.MaficRock.ToString())
 				.AddSimpleTile(CARPET, SimHashes.Shale.ToString())
 				.AddSimpleTile(CARPET, SimHashes.Obsidian.ToString())
@@ -221,7 +227,7 @@ namespace TrueTiles.Datagen
 			AddTiles(tiles, GlassTileConfig.ID)
 				.AddShinyTile(WINDOW, SimHashes.Diamond.ToString())
 				.AddShinyTile(WINDOW, SimHashes.SolidResin.ToString(), true, true)
-				.Add(SimHashes.Isoresin, new TileDataBuilder(AIRFLOW, SimHashes.SolidResin, false).Build())
+				.Add(SimHashes.NaturalSolidResin, new TileDataBuilder(WINDOW, SimHashes.SolidResin, true).Build())
 				.AddShinyTile(WINDOW, SimHashes.Amber.ToString(), true, true);
 
 			return tiles;
